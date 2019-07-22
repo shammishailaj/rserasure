@@ -119,6 +119,7 @@ func Decode(baseFilePath, targetDir string, dataShards, parShards int) {
 }
 
 // EncodeRS - HTTP Handler for reed-solomon encoder
+// Cf. https://github.com/klauspost/reedsolomon/blob/master/examples/simple-encoder.go
 func EncodeRS(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	switch r.Method {
@@ -142,6 +143,7 @@ func EncodeRS(w http.ResponseWriter, r *http.Request) {
 }
 
 // DecodeRS - HTTP Handler for reed-solomon decoder
+// Cf. https://github.com/klauspost/reedsolomon/blob/master/examples/simple-decoder.go
 func DecodeRS(w http.ResponseWriter, r *http.Request) {
 	w.Header().Add("Content-Type", "application/json")
 	switch r.Method {
