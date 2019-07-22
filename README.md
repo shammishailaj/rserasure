@@ -3,7 +3,7 @@ Sample usage of Reed-Solomon Erasure Coding
 
 **Please note:** *This codebase has been tested using version:* ```go version go1.12.5 darwin/amd64```
 
-By default, the server runs on *port 3000* on your *localhost*.
+By default, the server runs on *port 3000* of your *localhost*.
 
 Following is an example of the usage
 
